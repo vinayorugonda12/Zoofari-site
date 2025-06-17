@@ -1,0 +1,1055 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-top: 2.5rem;
+}
+
+.nav-container {
+  margin: 0;
+  /* border: 2px solid; */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(218, 213, 213) 0px 10px 10px,
+    rgb(255, 255, 255) 0px -12px 10px, rgba(255, 255, 255, 0.12) 0px 4px 6px,
+    rgba(237, 233, 233, 0.17) 0px 5px 5px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* background-color: white; */
+  z-index: 1000;
+}
+
+.nav-item1 {
+  display: flex;
+  justify-content: space-around;
+
+  width: 30%;
+}
+
+.inner-nav {
+  display: flex;
+}
+.logo {
+  padding: 1rem 0rem 0rem 1rem;
+}
+
+.nav-item2 {
+  display: flex;
+  /* display: none; */
+  justify-content: end;
+  /* justify-content: space-between; */
+  width: 70%;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+input {
+  display: none;
+}
+
+.menu-label {
+  display: none;
+}
+
+.text {
+  font-size: 2.4rem;
+  /* text-align: center; */
+  padding: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: rgb(81, 207, 81);
+  /* margin-right: 20rem; */
+}
+
+.item6 {
+  background-color: lightgreen;
+  padding: 1rem;
+  /* margin-right: 2rem; */
+}
+.item {
+  padding: 1%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  /* text-align: center; */
+}
+
+.item:hover {
+  color: white;
+  font-weight: 400;
+  background-color: lightgreen;
+}
+
+.images-part {
+  display: flex;
+  width: 100%;
+}
+
+.image-1 {
+  display: block;
+  /* justify-content: start;
+    align-items: center; */
+  width: 50%;
+  height: 40rem;
+  background-image: url("https://zoo-granby.transforms.svdcdn.com/production/animals/Zoo-de-Granby_Tigre-de-lAmour_15.jpg?w=750&fit=crop&fm=webp&s=cea2f44559eeece00f66fb706d43daa7");
+  filter: brightness(1);
+
+  background-size: cover;
+  background-position: center;
+ 
+
+  /* color: rgb(188, 50, 50); */
+  padding-top: 5rem;
+  /* font-size: 6rem; */
+  text-align: start;
+  padding-left: 2rem;
+}
+.image-1 > p {
+  width: 6rem;
+  height: 3rem;
+  text-align: center;
+  padding: 0.65rem;
+  color: rgb(255, 255, 255);
+  background-color: #87c311;
+}
+.image-1 > h2 {
+  font-size: 4rem;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  font-weight: bolder;
+  z-index: 2;
+  background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
+  
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.slider {
+  overflow: hidden;
+  width: 50%;
+  height: 40rem;
+}
+
+
+
+.images {
+  height: 40rem;
+  display: flex;
+  width: 100%; /* 100% × number of images */
+  animation: slide 10s infinite;
+}
+
+.images > img {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.second-container {
+  display: flex;
+  /* width: 100%; */
+  /* border: 1px solid; */
+
+  height: 90%;
+  margin: 5% 10%;
+}
+
+.left-one {
+  width: 50%;
+  /* border: 1px solid; */
+  padding: 3rem;
+}
+
+.left-one > h1 {
+  font-family: "Quicksand", sans-serif;
+}
+.right-one {
+  width: 50%;
+  /* border: 1px solid; */
+  padding: 3rem;
+}
+
+li {
+  list-style: none;
+  /* padding: 0.6rem; */
+}
+li > span {
+  color: #13a12d;
+  font-family: "Quicksand", sans-serif;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.read-more {
+  margin-top: 2rem;
+  padding: 1rem 1rem;
+  background-color: #13a12d;
+  width: 7rem;
+  color: white;
+}
+
+.border1{
+  border: 0.6rem solid rgb(42, 198, 42);
+  height: 30rem;
+}
+.img-div > img {
+  width: 100%;
+  height: auto;
+  transform: translate(3rem, 3rem);
+}
+
+.records {
+  margin-right: 4rem;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("https://www.pugdundeesafaris.com/blog/wp-content/uploads/2024/08/1-edited-scaled.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+  margin: 5%;
+  filter: brightness(1.3);
+}
+
+.record > span {
+  font-size: 3rem;
+  color: green;
+}
+.record > p {
+  color: white;
+}
+
+.number {
+  font-size: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.services {
+  display: flex;
+  width: 90%;
+  margin: 5%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service1 {
+  width: 45%;
+  text-align: center;
+}
+.service1 > h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+.service1 > p {
+  font-size: 1rem;
+}
+
+.service2 {
+  width: 45%;
+  background-color: lightgreen;
+  padding: 2rem;
+}
+
+.grid-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.grid-item {
+  width: 23%;
+  padding: 0.9%;
+  /* border: 1px solid black; */
+}
+
+.explore {
+  width: 90%;
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.explore1 {
+  width: 40%;
+}
+.explore1 > p {
+  color: #13a12d;
+}
+
+.explore-button {
+  padding: 1rem;
+  background-color: #13a12d;
+}
+
+/* .images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  width: 90%;
+  height: 100vh;
+  margin: 5%;
+}
+
+.inner-image{
+  width:25%;
+  height: auto;
+  padding: 0.3rem;
+  object-fit: cover;
+  margin-right: 1rem;
+ 
+}
+.inner-image img{
+  object-fit: cover;
+  width: 100%;
+
+} */
+
+
+.images-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: auto;
+  margin: 5% auto;
+  justify-content: space-between;
+  gap: 1rem; /* Added for consistent spacing */
+}
+
+.inner-image {
+  flex: 1 1 calc(33.33% - 1rem); /* 3 per row, with gap */
+  height: 250px; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.inner-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
+.timing-part {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("https://themewagon.github.io/zoofari/img/bg-2.jpg");
+  background-size: cover;
+  color: white;
+  height: 30rem;
+}
+ .timing-part h2 {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+
+.part1 {
+  width: 45%;
+  height: auto;
+}
+
+tr > .right {
+  text-align: end;
+}
+table {
+  opacity: 0.8;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+}
+tr {
+  width: 4rem;
+  background-color: rgb(99, 99, 99);
+  border-bottom: 0.01rem solid rgb(199, 198, 198);
+  background: rgba(0, 0, 0, 0.5);
+  filter: brightness(90);
+}
+td {
+  padding: 1rem 5rem;
+}
+.part2 {
+  width: 45%;
+  display: none;
+}
+
+/* -------------price--------- */
+
+
+.price-part{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  position: relative;
+  width: 350px;
+  height: 400px;
+  background: url('https://www.pugdundeesafaris.com/blog/wp-content/uploads/2024/08/1-edited-scaled.jpg') center/cover no-repeat;
+  color: white;
+  font-family: sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.content>h2,li{
+  color: white;
+
+}
+
+
+/* ----------------for dark over on top image ----------*/
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(3, 26, 11, 0.5); /* semi-transparent black */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+}
+
+.content h1 {
+  font-size: 3rem;
+  color: #00ff88; /* Bright green */
+}
+
+.price {
+  font-size: 1.8rem;
+  color: #00ff88;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+button:hover{
+  background-color: green;
+  color: white;
+}
+
+
+
+
+.review-h1{
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-bottom: 5rem;
+  height: auto;
+  text-decoration: underline;
+}
+
+.reviews:hover{
+ animation: review 20s infinite;
+  animation-delay: 2s;
+}
+.reviews {
+  display: flex;
+  height: auto;
+  width: 100vw; 
+  /* animation: review 20s infinite; */
+  /* animation-delay: 3s; */
+}
+
+
+.review-image{
+  width: 12rem;
+  text-align: center;
+  margin-right: 5rem;
+  height: 12rem;
+  border-radius: 50%;
+  border: 0.1rem solid rgb(25, 220, 77);
+  margin-bottom: 3rem;
+  padding: 0.4rem;
+}
+.review>img{
+  object-fit: cover;
+
+}
+.review{
+  width: 100%;
+  /* height: 100%; */
+  height: auto;
+  flex-shrink: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+.review-details{
+  width: 70%;
+  margin-left:10% ;
+  margin-right:15% ;
+  font-size: 1.2rem;
+  /* padding: 1rem; */
+  background-color: #00ff88;
+  padding: 2rem;
+  /* border-radius: 1rem; */
+    animation: reviewdetails 5s ;
+
+}
+
+.review-details>h3,h4{
+  padding: 0.5rem;
+  font-size: 1.8rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+@keyframes review {
+  0% {
+    transform: translateX(0); 
+  }
+  25% {
+    transform: translateX(-100%);
+   
+  }
+  50% {
+    transform: translateX(-150%);
+    
+  }
+  75%{
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+
+  }  
+}
+
+@keyframes reviewdetails {
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color:rgb(151, 221, 151) ;
+  }
+  100%{
+    background-color: rgb(60, 184, 60);
+  }
+  
+ }
+
+ .footer{
+  background-image: url('https://themewagon.github.io/zoofari/img/animal-lg-1.jpg');
+  height: 20rem;
+  /* background-clip: border-box; */
+  background-size: cover;
+ }
+ .footer-part{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /* background-image: url('https://themewagon.github.io/zoofari/img/animal-lg-1.jpg'); */
+  /* height: 20rem;
+  background-size: cover; */
+ }
+
+ .foot{
+  width: 23%;
+  /* border: 0.2rem solid; */
+  height: 15rem;
+  color: white;
+  margin: 1rem;
+  height: auto;
+  padding: 1.3rem;
+  background: rgba(0, 0, 0, 0.5);
+ }
+  .s-li li{
+    color: black;
+    
+  }
+
+  .lower-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+.footer-left{
+
+  padding: 1rem;
+}
+.footer-right{
+  
+  padding: 1rem;
+}
+
+
+
+
+
+
+
+/* ---------------for mobile view  ----------------*/
+
+@media screen and (max-width: 500px) {
+  .item:hover {
+    background-color: #13a12d;
+  }
+
+  .image-1 > h2 {
+    font-size: 3rem;
+  }
+
+  .image-1 > p {
+    /* border: 2px solid; */
+    width: 6rem;
+    height: 3rem;
+    text-align: center;
+    padding: 0.65rem;
+    color: white;
+    background-color: #13a12d;
+  }
+
+  .nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    /* background-color: white; */
+    z-index: 1000;
+  }
+
+  .nav-item2 {
+    width: 100%;
+    /* margin: 0; */
+    display: none;
+  }
+  .images-part {
+    display: block;
+  }
+
+  .image-1 {
+    width: 100%;
+    /* height: 30rem; */
+    height: auto;
+  }
+  .image2 {
+    height: auto;
+  }
+
+  .menu-label {
+    display: block;
+    font-size: 3rem;
+    /* padding: 1rem 0rem 0rem 0rem; */
+    padding: 1rem;
+    color: #13a12d;
+  }
+
+  input:checked + .nav-item2 {
+    display: block;
+    /* z-index: ; */
+    /* opacity: 0.1; */
+    /* filter: opacity(0.8); */
+    /* background-color: rgb(255, 255, 255); */
+  }
+
+  .slider {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    position: relative;
+    /* height: 30rem; */
+    /* min-height: 15rem; */
+    z-index: 1;
+  }
+  .images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .second-container {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+  .s-li li{
+    color: black;
+    
+  }
+
+  .left-one {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .records {
+    display: block;
+    height: auto;
+  }
+  .record {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .services {
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .service1 {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  .service2 {
+    width: 90%;
+    border-radius: 2rem;
+  }
+  .service1 > h1 {
+    font-size: 2.5rem;
+  }
+
+  .grid-item {
+    width: 100vw;
+    padding: 0.9%;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 1.5rem;
+    border: 0.1rem solid green;
+    margin-bottom: 0.4rem;
+    border-radius: 2rem;
+  }
+
+  .explore {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .explore1 {
+    text-align: center;
+  }
+  .explore2 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .explore-button {
+    width: 10rem;
+    text-align: center;
+    background-color: #13a12d;
+    padding: 1rem;
+  }
+
+ .footer{
+  background-image: url('https://themewagon.github.io/zoofari/img/animal-lg-1.jpg');
+  height: auto;
+  width: 100%;
+  /* background-clip: border-box; */
+  background-size: cover;
+ }
+
+
+.footer-part{
+  display: block;
+  /* height: auto; */
+  /* text-align: center; */
+  width: 100%;
+  /* margin: 22%; */
+}
+.foot{
+ 
+  margin: 1rem auto 1rem auto;
+}
+
+.images-grid {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 5%;
+}
+.inner-image{
+  margin: 1rem;
+}
+
+
+
+.lower-footer{
+  display: block;
+  text-align: center;
+  color: white;
+}
+b{
+  color: #d36948;
+  background-color: white;
+  padding: 0.1rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -------------for tablet view  --------- */
+@media only screen and (max-width: 768px) {
+  .item:hover {
+    background-color: #13a12d;
+  }
+
+  .nav-container {
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .nav-item1 {
+    width: 100%;
+  }
+
+  .nav-item2 {
+    width: 100%;
+    /* margin: 0; */
+    display: none;
+    background-color: white;
+  }
+  .images-part {
+    /* top: 40px; */
+    display: block;
+    /* position: relative; */
+    /* top: 5rem; */
+  }
+
+  .image-1 {
+    width: 100%;
+    height: 30rem;
+  }
+  .image2 {
+    width: 100%;
+    height: 30rem;
+    margin-left: 0%;
+  }
+
+  .menu-label {
+    display: block;
+    font-size: 3rem;
+    /* padding: 1rem 0rem 0rem 0rem; */
+    padding: 1rem;
+    color: #13a12d;
+  }
+
+  input:checked + .nav-item2 {
+    display: block;
+    z-index: 10;
+    opacity: 0.8;
+  }
+
+  .second-container {
+    display: block;
+    margin: 0;
+  }
+
+  .left-one {
+    width: 100%;
+  }
+  .right-one {
+    width: 100%;
+  }
+  .border1 {
+    height: 40%;
+
+  }
+  .img-div > img {
+    width: 100%;
+    /* height: 31rem; */
+    transform: translate(2rem, 2rem);
+  }
+
+  .records {
+    display: block;
+    height: auto;
+  }
+
+  .record {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .service1 > h1 {
+    font-size: 2rem;
+  }
+  .service2 > .number {
+    font-size: 1rem;
+  }
+
+  .grid-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .grid-item {
+    width: 48%;
+    padding: 0.9%;
+    margin: 0.3rem;
+    border: 0.1rem solid green;
+    border-radius: 1rem;
+    /* font-family: ; */
+  }
+
+  
+  .timing-part {
+    text-align: center;
+    display: block;
+    height: auto;
+  }
+  .timing-part h2 {
+    font-size: 2.5rem;
+  }
+
+  .part1 {
+    width: 45%;
+    height: auto;
+
+    /* margin-bottom: 2rem; */
+  }
+
+ 
+  .table-1{
+    opacity: 0.8;
+    width: 90%;
+    margin: 2rem;
+    border-collapse: collapse;
+  }
+
+  td {
+    padding: 1rem 2rem;
+  }
+    .table-2{
+    opacity: 0.8;
+    width: 90%;
+    height: auto;
+    margin:2rem;
+    border-collapse: collapse;
+  }
+ .footer{
+  background-image: url('https://themewagon.github.io/zoofari/img/animal-lg-1.jpg');
+  height: auto;
+  /* background-clip: border-box; */
+  background-size: cover;
+ }
+
+  .footer-part{
+  flex-wrap: wrap;
+  height: auto;
+}
+.foot{
+  width: 45%;
+}
+
+
+/* .images-grid{
+
+}
+
+.inner-image{
+  width: 45%;
+} */
+}
