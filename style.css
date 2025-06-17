@@ -681,6 +681,7 @@ button:hover{
   }
 
   .nav-item2 {
+    text-align: center;
     width: 100%;
     /* margin: 0; */
     display: none;
