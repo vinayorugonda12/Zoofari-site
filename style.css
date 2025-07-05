@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+--root{
+  --primary-font:"Open Sans",sans-serif;
+}
+
 html,
 body {
   max-width: 100%;
@@ -71,10 +75,14 @@ input {
   color: rgb(81, 207, 81);
   /* margin-right: 20rem; */
 }
+a{
+  text-decoration: none;
+}
 
 .item6 {
   background-color: lightgreen;
   padding: 1rem;
+  cursor: pointer;
   /* margin-right: 2rem; */
 }
 .item {
@@ -83,7 +91,12 @@ input {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.2rem;
   color: rgb(0, 0, 0);
+  text-align: center;
   /* text-align: center; */
+}
+
+li:hover{
+  color: orange;
 }
 
 .item:hover {
@@ -91,6 +104,10 @@ input {
   font-weight: 400;
   background-color: lightgreen;
 }
+
+/* .read-more1{
+  background-color: rgb(119, 119, 107);
+} */
 
 .images-part {
   display: flex;
@@ -120,9 +137,9 @@ input {
   width: 6rem;
   height: 3rem;
   text-align: center;
-  padding: 0.65rem;
-  color: rgb(255, 255, 255);
-  background-color: #87c311;
+  padding: 0.76rem;
+  color: linen;
+  background-color: #88ba25;
 }
 .image-1 > h2 {
   font-size: 4rem;
@@ -182,6 +199,7 @@ input {
 
 .left-one {
   width: 50%;
+  font-family: sans-serif;
   /* border: 1px solid; */
   padding: 3rem;
 }
@@ -255,6 +273,8 @@ li > span {
 
 .services {
   display: flex;
+    font-family: sans-serif;
+
   width: 90%;
   margin: 5%;
   justify-content: center;
@@ -287,6 +307,8 @@ li > span {
   justify-content: center;
   align-items: center;
   text-align: center;
+    font-family: sans-serif;
+
 }
 .grid-item {
   width: 23%;
@@ -312,6 +334,11 @@ li > span {
 .explore-button {
   padding: 1rem;
   background-color: #13a12d;
+  color: white;
+}
+.explore-button:hover{
+  background-color: rgb(34, 186, 59);
+  cursor: pointer;
 }
 
 /* .images-grid {
@@ -370,6 +397,8 @@ li > span {
   background-size: cover;
   color: white;
   height: 30rem;
+    font-family: sans-serif;
+
 }
  .timing-part h2 {
     font-size: 2.5rem;
@@ -429,6 +458,7 @@ td {
   margin-bottom: 1rem;
   justify-content: center;
   align-items: center;
+  /* transition: ; */
 }
 
 .content>h2,li{
